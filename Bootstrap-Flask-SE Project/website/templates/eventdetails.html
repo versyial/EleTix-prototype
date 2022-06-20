@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}EventDetails{% endblock %} 
+{% block content%}
+    <section class="text-light container-fluid" >
+        <div class="img-fluid w-100" style="background-image: url('../static/image/justin-bieber-background.png'); height: 60vh;">
+          <div class="container d-flex justify-content-evenly align-items-center p-5 ">
+              <img src="../static/image/JustinPOster.png" class="img-fluid w-25" alt="" srcset="">
+            <div class="d-sm-flex m-5">
+              <div>
+                <h1>Concert Justin Beiber</h1>
+                <h5><i class="bi bi-geo-alt-fill"></i> <span style="color:#FAD02C;"> Gelora Bung Karno DKI Jakarta</span> </h5>
+                <p class="lead text-start" >
+                  Justin Beiber coming back to Jakarta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis perferendis quia blanditiis, amet provident, magni reprehenderit, nostrum inventore numquam nihil tempora possimus minima cum autem animi ut asperiores eum.  
+                </p>
+                <div class="d-flex d-inline-flex">
+                  <div class="">
+                    <a href="/buyticketform" class="btn btn-warning " role="button">Buy Ticket</a>
+                  </div>
+                  <div class="ms-3">
+                    <h3><i class="bi bi-ticket-perforated-fill">|</i><span class="h4">150 left</span> </h3>
+                  </div>
+                </div>
+              </div>
+{% endblock %}

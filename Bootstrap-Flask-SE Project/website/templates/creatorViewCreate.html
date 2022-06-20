@@ -1,0 +1,120 @@
+{% extends "base.html" %} {% block title %}viewcreate{% endblock %} 
+{% block content%}
+<style>
+    input,
+    label {
+        display: block;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar-sticky sidebar">
+            <div class="flex-shrink-0 p-3">
+              <a href="/creatorView"
+                class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                  <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-5 fw-semibold">Event Manager</span>
+              </a>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#home-collapse" aria-expanded="true">
+                    Events
+                  </button>
+                  <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="/creatorView" class="link-dark rounded">Event List</a></li>
+                      <li><a href="/creatorViewCreate" class="link-dark rounded">Create</a></li>
+                      <li><a href="/creatorViewManage" class="link-dark rounded">Manage</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Dashboard
+                  </button>
+                  <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                      <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    Orders
+                  </button>
+                  <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">New</a></li>
+                      <li><a href="#" class="link-dark rounded">Processed</a></li>
+                      <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                      <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <h3 class="mt-3"><b>Create Event</b></h3>
+            <hr>
+            <div class="mb-3 mt-2">
+                <label for="eventPoster">
+                    <h5>Event poster image</h5>
+                </label>
+                <input type="file" name="eventPoster" id="">
+            </div>
+            <div class="mb-3">
+                <label for="eventThumbnail">
+                    <h5>Event poster thumbnail</h5>
+                </label>
+                <input type="file" name="eventThumbnail" id="">
+            </div>
+            <div class="mb-3">
+                <label for="eventName">Event name</label>
+                <input type="text" name="eventName" id="">
+            </div>
+            <div class="mb-3">
+                <label for="eventDate">Event date</label>
+                <input type="date" name="eventDate" id="">
+            </div>
+            <div class="mb-3">
+                <label for="eventDesc">Event description</label>
+                <textarea name="eventDesc" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="eventTicketAmount">Event tickets amount</label>
+                <input type="number" name="eventTicketAmount" id="" size="5">
+            </div>
+            <div class="mb-3">
+                <button type="submit" value="submit" class="btn btn-warning">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

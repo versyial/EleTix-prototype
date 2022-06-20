@@ -1,0 +1,95 @@
+{% extends "base.html" %} {% block title %}Creator EventDetails{% endblock %} 
+{% block content%}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar-sticky sidebar">
+            <div class="flex-shrink-0 p-3">
+              <a href="/creatorView"
+                class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                  <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-5 fw-semibold">Event Manager</span>
+              </a>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#home-collapse" aria-expanded="true">
+                    Events
+                  </button>
+                  <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="/creatorView" class="link-dark rounded">Event List</a></li>
+                      <li><a href="/creatorViewCreate" class="link-dark rounded">Create</a></li>
+                      <li><a href="/creatorViewManage" class="link-dark rounded">Manage</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Dashboard
+                  </button>
+                  <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                      <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    Orders
+                  </button>
+                  <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">New</a></li>
+                      <li><a href="#" class="link-dark rounded">Processed</a></li>
+                      <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                      <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-md-9">
+            <h3 class="mt-3"><b>Event Title</b></h3>
+            <hr>
+          <div class="row">
+              <div class="col">
+                  <img src="https://cdn.kiostix.com/media/18304/conversions/medium.jpg" alt="" height="300px">
+                  <div class="mb-3 mt-3">
+                      <a href="creatorViewManage.html">
+                          <button type="button" class="btn btn-lg" style="background-color: #333652; color: #fad02c;">Edit</button>
+                      </a>
+                      <a href="#">
+                          <button type="button" class="btn btn-lg" style="background-color: #333652; color: #fad02c;">Delete</button>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="col">
+                  <div class="mb-3">
+                      <h5>Description</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus placeat nisi, facere quae neque velit omnis recusandae minima numquam architecto ex illo incidunt non. Aliquid earum animi distinctio obcaecati ipsa, in, veritatis id deserunt dicta maxime odit, beatae quam atque. Sequi unde numquam eaque, quos fugit nulla error sapiente.</p>
+                  </div>
+                  <div class="mb-3">
+                      <h5>Date</h5>
+                      <p>dd/mm/yyyy</p>
+                  </div>
+                  <div class="mb-3">
+                      <h5>Total Tickets</h5>
+                      <p>##</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

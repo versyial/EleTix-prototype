@@ -1,0 +1,91 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  <div class="container-fluid p-0">
+    <h1>Spotlight</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner bg-black">
+          <div class="carousel-item active"  >
+            <img src="../static/image/arianaCover.png" class="d-block  mx-auto" style="height: 30rem;" alt="...">
+          </div>
+          <div class="carousel-item"  >
+            <img src="../static/image/gojekdiscount.png" class="d-block  mx-auto" style="height: 30rem;" alt="...">
+          </div>
+          <div class="carousel-item"  >
+            <img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 30rem;" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container-fluid p-0">
+    <h1>Most popular</h1>
+    <div id="carouselMini" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner bg-black">
+        <div class="carousel-item active"  >
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item "  >
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            
+          </div>
+        </div>
+        <div class="carousel-item "  >
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            <div class="col-lg-4">
+              <a href="/eventdetails"><img src="../static/image/JustinPOster.png" class="d-block  mx-auto" style="height: 10rem;" alt="..."></a>      
+            </div>
+            
+          </div>
+        </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMini" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMini" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+  {% endblock %}

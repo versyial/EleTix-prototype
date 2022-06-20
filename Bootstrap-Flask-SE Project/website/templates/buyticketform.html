@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block title %}buyticketform{% endblock %} 
+{% block content%}
+    <section class="container">
+        <div class="container align-items-center  align-self-center d-inline-flex mt-xxl-5 pt-5">   
+          <form action="" class="was-validated needs-validation row" novalidate>
+              <!-- Disabled -->
+              <div class="row mb-1">
+                  <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputName" value="John Doe" disabled>
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="inputName" class="col-sm-2 col-form-label">Email Address</label>
+                  <div class="col-sm-3">
+                    <input type="email" class="form-control" id="inputName" value="JohnDoe@gmail.com" disabled>
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="Telp" class="col-sm-2 col-form-label">Telp</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputName" value="+62 913331232" disabled>
+                  </div>
+                </div>
+                <!-- SeatType -->
+                <div class="row mb-1">
+                  <label for="Seat" class="col-sm-2 col-form-label">Seat</label>
+                  <div class="col-sm-4">
+                      <select class="form-select col-md-7" id="Seat" aria-label="Default select example" required>
+                          <option selected disabled value="">Seat Type</option>
+                          <option value="1">VIP</option>
+                          <option value="2">VVIP</option>
+                          <option value="3">Regular</option>
+                        </select>
+                  </div>
+                    <div class="valid-feedback">
+                    </div>
+                    <div class="invalid-feedback">
+                      Please choose seat Type
+                    </div>
+                </div>
+                <!-- Amount -->
+                <div class="row mb-1">
+                  <label for="Ticket-Amount" class="col-sm-2 col-form-label">Ticket Amount</label>
+                  <div class="col-sm-4">
+                      <select class="form-select col-md-7" id="Ticket-Amount" aria-label="Default select example" required>
+                          <option selected disabled value="">-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                  </div>
+                    <div class="valid-feedback">
+                    </div>
+                    <div class="invalid-feedback">
+                      Please choose ticket amount
+                    </div>
+                </div>
+                <!-- date -->
+                <div class="row mb-1">
+                  <label for="date" class="col-sm-2 col-form-label">Date</label>
+                  <div class="col-sm-4">
+                      <input type="date" id="date" value="" required>
+                  </div>
+
+                </div>
+                <div class="m-0 mx-auto">
+                  <button class="btn btn-warning " type="submit"> <b>Submit</b> </button>
+                </div>
+  
+          </form>
+          <div class="m-0 p-0">
+              <img src="../static/image/concertmap.png" style="height: 50vh;" salt="">
+          </div>
+          </div>
+      </section>
+{% endblock %}
